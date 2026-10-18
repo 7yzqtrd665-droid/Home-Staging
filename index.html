@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Хоум-стейджинг | Искусство предпродажной подготовки недвижимости</title>
+  <meta name="description" content="Профессиональный хоум-стейджинг: раскроем потенциал квартиры и поможем продать её дороже.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="container navbar">
+    <a class="logo" href="#top">Home<span>Staging</span></a>
+    <nav class="nav" aria-label="Навигация">
+      <a href="#services">Услуги</a>
+      <a href="#portfolio">Портфолио</a>
+      <a href="#contact" class="btn-nav">Связаться</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ГЛАВНЫЙ ЭКРАН -->
+  <section class="hero">
+    <div class="container hero-content">
+      <p class="eyebrow reveal">Искусство предпродажной подготовки</p>
+      <h1 class="reveal">Продайте или сдайте недвижимость <span>на 20% дороже</span></h1>
+      <p class="reveal">
+        Профессиональный хоум-стейджинг: раскроем потенциал вашей квартиры,
+        создадим интерьер, в который влюбляются с первого взгляда, и ускорим сделку.
+      </p>
+      <a class="btn btn-light reveal" href="#portfolio">Посмотреть работы ↓</a>
+    </div>
+  </section>
+
+  <!-- УСЛУГИ -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title reveal">Наши услуги</h2>
+      <p class="section-subtitle reveal">
+        Помогаем недвижимости расти в цене и привлекать идеальных покупателей
+      </p>
+
+      <div class="services-grid">
+        <article class="card reveal">
+          <span class="card-number">01</span>
+          <div class="card-icon">📋</div>
+          <h3>Консультация</h3>
+          <p>Подробный разбор преимуществ и недостатков квартиры с выездом на объект. Пошаговый чек-лист для самостоятельного внедрения изменений.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-number">02</span>
+          <div class="card-icon">⚡</div>
+          <h3>Экспресс-стейджинг</h3>
+          <p>Быстрая подготовка перед фотосессией или показом за 1–2 дня. Работаем с имеющейся мебелью, добавляем стильный декор и текстиль.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-number">03</span>
+          <div class="card-icon">💎</div>
+          <h3>Полное преображение</h3>
+          <p>Комплексный проект «под ключ»: от мелкого ремонта и организации пространства до меблировки и финальной профессиональной съёмки.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПОРТФОЛИО / СЛАЙДЕР -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="section-title reveal">Результат работы</h2>
+      <p class="section-subtitle reveal">
+        Перетаскивайте ползунок влево и вправо, чтобы увидеть магию изменений
+      </p>
+
+      <div class="comparison-wrap reveal">
+        <div class="comparison-slider">
+
+          <!-- ВАЖНО: все эти элементы должны быть в разметке -->
+          <div class="img background-img" role="img"
+               aria-label="Комната после хоум-стейджинга"></div>
+
+          <div class="img foreground-img" role="img"
+               aria-label="Та же комната до подготовки"></div>
+
+          <div class="slider-line" aria-hidden="true"></div>
+
+          <span class="label label-before">До</span>
+          <span class="label label-after">После</span>
+
+          <div class="slider-handle"
+               role="slider" tabindex="0"
+               aria-label="Сравнение фотографии до и после"
+               aria-orientation="horizontal"
+               aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <span class="slider-arrow left" aria-hidden="true"></span>
+            <span class="slider-arrow right" aria-hidden="true"></span>
+          </div>
+
+        </div>
+
+        <p class="comparison-hint">↔ Потяните ползунок или нажмите в любую точку</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- КОНТАКТЫ -->
+<footer class="footer" id="contact">
+  <div class="container footer-content">
+    <p class="eyebrow">Давайте начинать</p>
+    <h2 class="reveal">Начнем преображение вашей квартиры?</h2>
+    <p class="reveal">
+      Оставьте заявку, и мы свяжемся с вами в течение часа,
+      чтобы обсудить детали вашего объекта.
+    </p>
+    <a class="btn btn-primary reveal" href="tel:+79991234567">+7 (999) 123-45-67</a>
+
+    <div class="credits">
+      © 2026 Home Staging Studio. Все права защищены.<br>
+      Подготовлено с любовью к интерьерам.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
